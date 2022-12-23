@@ -1,0 +1,12 @@
+.navbar {
+  display: block;
+}
+
+.navItems {
+  list-style-type: none;
+}
+
+.navLink {
+  text-decoration: none;
+  margin: 0 5px;
+}
