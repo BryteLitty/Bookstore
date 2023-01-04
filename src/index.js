@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
+        {console.log(store.getState())}
         <App />
       </Provider>
     </BrowserRouter>

@@ -1,12 +1,18 @@
 import React from 'react';
-import Book from '../Book';
+import { useSelector } from 'react-redux';
+import Booklist from '../Booklist';
 import AddBook from '../AddBook';
 
-const Books = () => (
-  <div>
-    <Book title="Think and Grow Rich" author="Napoleon Hill" />
-    <AddBook />
-  </div>
-);
+const Books = () => {
+
+  const books = useSelector((state) => state.book)
+  
+  return (
+    <div>
+      <Booklist books={books}/>
+      <AddBook />
+    </div>
+  )
+}
 
 export default Books;
