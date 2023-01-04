@@ -1,36 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
-
   const newBook = {
     id: uuidv4(),
     title: '',
-    author: ''
-  }
+    author: '',
+  };
 
   const [details, setDetails] = useState(newBook);
   const dispatch = useDispatch();
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook(details))
-    setDetails(newBook)
-  }
+    dispatch(addBook(details));
+    setDetails(newBook);
+  };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const input = e.target.name;
 
-    if(input === 'title'){
+    if (input === 'title') {
       setDetails({ ...details, title: e.target.value });
     } else {
       setDetails({ ...details, author: e.target.value });
     }
-  }
-
+  };
 
   return (
     <div>
@@ -40,6 +37,6 @@ const AddBook = () => {
         <button type="submit">Add Book</button>
       </form>
     </div>
-  )
-}
+  );
+};
 export default AddBook;

@@ -6,8 +6,8 @@ export const checkStatus = (status) => ({
   type: CHECK_STATUS,
   payload: {
     status: {
-      status
-    }
+      status,
+    },
   },
 });
 
@@ -15,7 +15,7 @@ const categoryReducer = (state = initalState, action) => {
   switch (action.type) {
     case CHECK_STATUS:
 
-      return 'Under Construction'
+      return 'Under Construction';
 
     default:
       return state;
