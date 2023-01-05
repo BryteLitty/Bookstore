@@ -1,19 +1,18 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { removeBook } from '../redux/books/books';
 
-/*eslint-disable */
 const Booklist = ({ books }) => {
-  
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    dispatch(removeBook(id))
-  }
+    dispatch(removeBook(id));
+  };
 
   return (
     <div>
-      {books.map(book => (
+      {books.map((book) => (
         <div key={book.id}>
           <h1>{book.title}</h1>
           <p>{book.author}</p>
@@ -24,7 +23,16 @@ const Booklist = ({ books }) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
+
+Booklist.defaultProps = { books: null };
+Booklist.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  })),
+};
 
 export default Booklist;

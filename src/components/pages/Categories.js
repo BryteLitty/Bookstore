@@ -4,12 +4,10 @@ import { checkStatus } from '../../redux/categories/categories';
 
 const Categories = () => {
   const dispatch = useDispatch();
-
   const status = useSelector((state) => state.category);
 
   const handleClick = () => {
-    dispatch(checkStatus);
-    console.log(status);
+    dispatch(checkStatus());
   };
 
   return (
