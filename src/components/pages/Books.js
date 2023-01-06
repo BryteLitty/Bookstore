@@ -13,8 +13,9 @@ const Books = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="booklist">
       <Booklist books={books} />
+      <hr className="horizontal-divider" />
       <AddBook />
     </div>
   );

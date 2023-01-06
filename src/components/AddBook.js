@@ -31,11 +31,12 @@ const AddBook = () => {
   };
 
   return (
-    <div>
+    <div className="form-container">
+      <h2 className="form-heading">ADD A NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" value={details.title} name="title" placeholder="Book Title" onChange={handleChange} />
         <input type="text" value={details.author} name="author" placeholder="Author" onChange={handleChange} />
-        <button type="submit">Add Book</button>
+        <button className="add-book-btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
