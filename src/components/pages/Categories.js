@@ -12,8 +12,8 @@ const Categories = () => {
 
   return (
 
-    <div>
-      <button type="button" onClick={handleClick}>Check Status</button>
+    <div className="categories">
+      <button className="status-btn" type="button" onClick={handleClick}>Check Status</button>
       <h2>{status}</h2>
     </div>
   );

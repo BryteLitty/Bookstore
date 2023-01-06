@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.booklist {
+  padding: 4%;
+  margin: 4%;
+  background-color: #fff;
+}
+
+.singleBook {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.btnOutline {
+  border: none;
+  background-color: transparent;
+  color: #4386bf;
+  font-weight: 300;
+  padding: 0;
+  margin: 0 6px 0 0;
+}
+
+.btnOutline:hover {
+  text-decoration: 1px underline #4386bf;
+  transition: all ease-in;
+}
+
+.btnDivider {
+  border-right: 1px solid #99a9b1;
+  margin-right: 6px;
+}
+
+.category {
+  font-weight: 700;
+  color: #121212;
+  opacity: 0.4;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.2px;
+  color: #121212;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 0;
+}
+
+.author {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #4386bf;
+  margin-bottom: 6px;
+  font-size: 0.75rem;
+}
+
+.flexLeft {
+  display: flex;
+  align-items: center;
+}
+
+.progressBox {
+  display: flex;
+  align-items: center;
+}
+
+.progressContainer {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.63rem 0.63rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  position: absolute;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  transform: rotate(45deg);
+}
+
+.percent {
+  font-size: 1.6rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.completed {
+  font-size: 0.8rem;
+  color: #121212;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* eslint-disable-next-line */
+.progressDivider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.currentChapter {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapterLabel {
+  font-family: 'Roboto Slab', serif;
+  color: #121212;
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+.chapter {
+  margin-top: 0.438rem;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+  font-family: 'Roboto Slab', serif;
+  color: #121212;
+  font-weight: 300;
+}
+
+.btnPrimary {
+  cursor: pointer;
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-top: 0.8rem;
+  padding: 6px 20px;
+}
