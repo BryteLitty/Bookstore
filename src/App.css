@@ -2,14 +2,11 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 body {
   background-color: #f5f6fa;
-}
-
-.app {
-  margin: 4%;
 }
 
 .color-blue {
@@ -36,11 +33,12 @@ body {
 }
 
 .form-heading {
-  /* font-family: 'Montserrat' sans-serif; */
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.18px;
   color: #888;
+  margin-left: 2%;
+  margin-bottom: 5px;
 }
 
 .status-btn {
@@ -56,9 +54,14 @@ body {
   padding: 6px 20px;
 }
 
-.form {
+.form-container {
+  margin: 0 2%;
+}
+
+form {
   display: flex;
   justify-content: space-evenly;
+  width: 90%;
 }
 
 input {
