@@ -5,9 +5,10 @@ import { addBook } from '../redux/books/books';
 
 const AddBook = () => {
   const newBook = {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title: '',
     author: '',
+    category: '',
   };
 
   const [details, setDetails] = useState(newBook);
