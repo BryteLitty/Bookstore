@@ -12,16 +12,16 @@ const Booklist = ({ books }) => {
 
   return (
     <div>
-      {books.map((book) => (
-        <div key={book.id}>
+      {books.length > 0 ? books.map((book) => (
+        <div key={book.item_id}>
           <h1>{book.title}</h1>
           <p>{book.author}</p>
 
           <span>
-            <button type="button" onClick={() => handleDelete(book.id)}>removeBook</button>
+            <button type="button" onClick={() => handleDelete(book.item_id)}>removeBook</button>
           </span>
         </div>
-      ))}
+      )) : 'Oops! No books found'}
     </div>
   );
 };
